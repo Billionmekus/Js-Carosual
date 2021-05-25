@@ -1,0 +1,139 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: -webkit-pictograph;
+}
+.new-main{
+    width: 100%;
+    height: 840px;
+    margin: 10px auto;
+    position: relative;
+    padding: 5px 0;
+}
+.new-main .text{
+    padding: 10px;
+    text-align: center;
+    color: #554;
+}
+.text h1{
+    font-size: 50px;
+}
+.text p{
+    width: 60%;
+    padding: 5px;
+    margin: auto;
+    line-height: 30px;
+}
+.new-main .new-header{
+    width: 98%;
+    height: 60px;
+    margin: 0 auto;
+    align-items: center;
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    border-bottom: 2px solid #ddd;
+}
+.new-header p span{
+    font-size: 40px;
+    margin: 0 5px;
+    cursor: pointer;
+    color: #555;
+    width: 30px;
+    height: 30px;
+    display: inline-block;
+    line-height: 19px;
+    text-align: center;
+    border-radius: 3px;
+}
+.new-header p span:hover{
+    background: #222;
+    color: white;
+}
+.new-section{
+    width: 98%;
+    height: 600px;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    overflow-x: auto;
+}
+.new-section::-webkit-scrollbar{
+    display: none;
+}
+.new-section .product{
+    min-width: 24%;
+    height: 90%;
+    background: whitesmoke;
+    margin: 0 20px 0 0;
+    border-radius: 20px;
+    position: relative;
+    left: 0;
+    transition: 0.5s;
+}
+picture{
+    width: 100%;
+    height: 70%;
+    padding: 20px;
+    display: flex;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+picture img{
+    width: 100%;
+}
+.detail, .button{
+    width: 90%;
+    margin: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 50px;
+    font-size: 20px;
+    color: #444;
+}
+small{
+    color: #555;
+}
+.button a{
+    text-decoration: none;
+    padding: 6px 14px;
+    font-size: 15px;
+    margin: 5px 0 0 20px;
+    display: inline-block;
+    background: #6773ff;
+    color: white;
+}
+p.star{
+    margin: 5px auto;
+    width: 65%;
+    font-size: 25px;
+    color: #808080;
+}
+@media(max-width: 768px)
+{
+    .text h1{
+        font-size: 35px;
+    }
+    .text p{
+        width: 90%;
+    }
+    .new-header h1{
+        font-size: 25px;
+    }
+    .new-header p span{
+        font-size: 30px;
+    }
+    .new-section .product{
+        min-width: 49%;
+        margin: 0 10px 0 0;
+    }
+    .details, .button{
+        font-size: 16px;
+    }
+    .button a{
+        padding: 6px 10px;
+    }
+}
